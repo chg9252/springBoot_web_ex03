@@ -23,7 +23,7 @@ public class SampleController {
         log.info("접속여부 확인!!");
     }
 
-    @GetMapping("/ex2")
+    @GetMapping({"/ex2", "/exLink"})
     public void exModel(Model model) {
         List<SampleDTO> list = IntStream.rangeClosed(1, 20).asLongStream()
                 .mapToObj(i -> {
