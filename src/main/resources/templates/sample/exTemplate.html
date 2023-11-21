@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<!--<th:block th:replace="~{가지고 올 html 파일경로:: 함수명(파라미터)}">-->
+<th:block th:replace="~{/layout/layout1.html:: setContent(~{this::content})}">
+  <th: block th:fragment="content">
+    <h1>exTemplate Page</h1>
+  </th:>
+</th:block>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
